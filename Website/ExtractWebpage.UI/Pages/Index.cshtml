@@ -1,0 +1,46 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+    <div style="padding:10px 0;display:flex;justify-content:center">
+        <label for="url" style="line-height:28px;margin-bottom:inherit">Url:</label>
+        <input type="text" id="url" value="https://www.ibm.com/in-en" name="url">
+        <div style="margin-left:10px;">
+            <input type="submit" id="btnload" value="Submit" class="submit-btn">
+        </div>
+    </div>
+    <div class="carousel-container">
+
+
+        <div id="myCarousel" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators" id="indicators"></ol>
+            <div class="carousel-inner" id="homepageItems"></div>
+            <div class="carousel-controls">
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="carousel-control right"
+                   href="#myCarousel"
+                   data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="container" style="text-align:center">
+        <h2 class="h2-text">Total Words: <b id='wordcount'></b><h2>
+
+    </div>
+    <div id="container">
+    </div>
+    <div style="font-size:17px;text-align:center;margin-top:-11px;font-weight:600">Top 10 Words</div>
+    <div id="top10words">
+        <div class="top-records" id="top10words" style="margin-top:10px;">
+
+        </div>
+    </div>
